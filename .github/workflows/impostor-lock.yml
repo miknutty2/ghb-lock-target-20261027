@@ -1,0 +1,11 @@
+name: Fork impostor lock control
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Invoke upstream action
+        uses: miknutty2/ghb-lock-target-20261027@main
