@@ -7,6 +7,8 @@ workflows:
     - 09sd/ghb-lock-source-20261027@main
   .github/workflows/identity-lock.yml:
     - 09sd/ghb-lock-identity-20261027@main
+  .github/workflows/impostor-lock.yml:
+    - miknutty2/ghb-lock-target-20261027@main
 dependencies:
   09sd/ghb-lock-source-20261027@main:
     ref: main
@@ -18,3 +20,8 @@ dependencies:
     commit: sha1-5c596ce7fb3af79d9c9ebe816f8cce0d45bca809
     owner_id: 183424556
     repo_id: 1436501669
+  miknutty2/ghb-lock-target-20261027@main:
+    ref: main
+    commit: sha1-8fd0b7f3809340682954fae016a8024355e713ed
+    owner_id: 339250885
+    repo_id: 1436490719
